@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useTranslation } from "../components/lib/i18n";
 import { Input } from "@/components/ui/input";
@@ -7,6 +8,11 @@ import { MapPin, Phone, Mail } from "lucide-react";
 
 export default function ContactPage() {
   const { t } = useTranslation();
+
+  // Scroll to top when component mounts
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen bg-offwhite py-12">

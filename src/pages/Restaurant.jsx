@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useTranslation } from "../components/lib/i18n";
 import { MENU } from "../components/data/mockData";
@@ -5,6 +6,11 @@ import MenuList from "../components/site/MenuList";
 
 export default function RestaurantPage() {
   const { t } = useTranslation();
+
+  // Scroll to top when component mounts
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const restaurantImages = [
     {
@@ -18,7 +24,7 @@ export default function RestaurantPage() {
       description: 'Dînez les pieds dans le sable face au coucher de soleil'
     },
     {
-      src: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=800&h=600&fit=crop',
+      src: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&h=600&fit=crop',
       title: 'Spécialités mauriciennes',
       description: 'Nos chefs préparent des plats authentiques avec des produits locaux'
     },
@@ -43,7 +49,7 @@ export default function RestaurantPage() {
         </div>
 
         {/* Hero Image */}
-        <div className="mb-12 rounded-visual overflow-hidden shadow-elegant">
+        <div className="mb-12 rounded-visual overflow-hidden shadow-elegant relative">
           <img
             src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&h=500&fit=crop"
             alt="Restaurant La Case du Pêcheur"

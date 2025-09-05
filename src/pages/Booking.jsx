@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Filter, Eye } from "lucide-react";
 import { useTranslation } from "../components/lib/i18n";
@@ -7,6 +8,11 @@ import DisabledBookingWidget from "../components/site/DisabledBookingWidget";
 
 export default function BookingPage() {
   const { t } = useTranslation();
+
+  // Scroll to top when component mounts
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen bg-offwhite py-12">

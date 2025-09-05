@@ -13,7 +13,7 @@ export const translations = {
       booking: "Réservation"
     },
     bookingSoon: "Réservation en ligne bientôt disponible",
-    payOnSiteMUR: "Paiement sur place en MUR. Les prix affichés peuvent s'adapter au pays (indicatif).",
+    payOnSiteMUR: "Paiement sur place en MUR. Les prix affichés peuvent varier selon le pays (indication).",
     pricesIndicative: "Prix indicatifs",
     disabledTooltip: "Bientôt disponible",
     bungalowTypes: {
@@ -78,7 +78,7 @@ export const translations = {
       booking: "Booking"
     },
     bookingSoon: "Online booking coming soon",
-    payOnSiteMUR: "Payment on-site in MUR. Displayed prices may adapt to country (indicative).",
+    payOnSiteMUR: "Payment on-site in MUR. Displayed prices may vary by country (indication).",
     pricesIndicative: "Indicative prices",
     disabledTooltip: "Coming soon",
     bungalowTypes: {
