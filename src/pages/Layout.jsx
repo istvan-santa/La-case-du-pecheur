@@ -4,7 +4,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { MapPin, Phone, Mail, Facebook, Instagram, Menu, X } from "lucide-react";
-import { useTranslation } from "./components/lib/i18n";
+import { useTranslation } from "../components/lib/i18n";
 
 export default function Layout({ children, currentPageName }) {
   const location = useLocation();
